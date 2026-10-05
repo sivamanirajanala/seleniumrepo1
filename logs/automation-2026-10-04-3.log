@@ -1,0 +1,37 @@
+15:02:48.602 [main] INFO  tests.PaginationTest - Testing Previous button.
+15:02:48.695 [main] INFO  tests.PaginationTest - Successfully navigated back to page: 5
+15:02:48.721 [main] INFO  tests.PaginationTest - Row data: Quinn Flynn Support Lead Edinburgh 22 2013-03-03 $342,000
+15:02:48.732 [main] INFO  tests.PaginationTest - Row data: Rhona Davidson Integration Specialist Tokyo 55 2010-10-14 $327,900
+15:02:48.747 [main] INFO  tests.PaginationTest - Row data: Sakura Yamamoto Support Engineer Tokyo 37 2009-08-19 $139,575
+15:02:48.759 [main] INFO  tests.PaginationTest - Row data: Serge Baldwin Data Coordinator Singapore 64 2012-04-09 $138,575
+15:02:48.771 [main] INFO  tests.PaginationTest - Row data: Shad Decker Regional Director Edinburgh 51 2008-11-13 $183,000
+15:02:48.784 [main] INFO  tests.PaginationTest - Row data: Shou Itou Regional Marketing Tokyo 20 2011-08-14 $163,000
+15:02:48.797 [main] INFO  tests.PaginationTest - Row data: Sonya Frost Software Engineer Edinburgh 23 2008-12-13 $103,600
+15:02:48.810 [main] INFO  tests.PaginationTest - Row data: Suki Burks Developer London 53 2009-10-22 $114,500
+15:02:48.823 [main] INFO  tests.PaginationTest - Row data: Tatyana Fitzpatrick Regional Director London 19 2010-03-17 $385,750
+15:02:48.834 [main] INFO  tests.PaginationTest - Row data: Thor Walton Developer New York 61 2013-08-11 $98,540
+15:02:48.834 [main] INFO  tests.PaginationTest - Previous button validation successful.
+15:02:48.834 [main] INFO  tests.PaginationTest - Pagination Test Passed
+15:59:20.024 [main] INFO  tests.BrowserConsoleLogsCapture - opening the url
+15:59:24.397 [main] INFO  tests.BrowserConsoleLogsCapture - finding alert element
+15:59:24.518 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the alert button
+15:59:24.541 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the alert
+15:59:24.542 [main] INFO  tests.BrowserConsoleLogsCapture - finding the confirm alert button
+15:59:24.644 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the confirm button
+15:59:24.659 [main] INFO  tests.BrowserConsoleLogsCapture - acceped the confirm alert
+15:59:24.660 [main] INFO  tests.BrowserConsoleLogsCapture - now finding the browser logs
+15:59:24.677 [main] INFO  tests.BrowserConsoleLogsCapture - these are all logs[[2026-10-04T10:29:23.287Z] [SEVERE] https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791109763179r0.03313413987047975&wxhr=true&t=1791109763193&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED, [2026-10-04T10:29:24.581Z] [SEVERE] https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791109763179r0.03313413987047975&wxhr=true&t=1791109764505&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED, [2026-10-04T10:29:24.596Z] [SEVERE] https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()]
+15:59:24.677 [main] INFO  tests.BrowserConsoleLogsCapture - critical error foundhttps://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791109763179r0.03313413987047975&wxhr=true&t=1791109763193&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+15:59:24.678 [main] INFO  tests.BrowserConsoleLogsCapture - critical error foundhttps://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791109763179r0.03313413987047975&wxhr=true&t=1791109764505&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+15:59:24.679 [main] INFO  tests.BrowserConsoleLogsCapture - critical error foundhttps://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
+15:59:24.679 [main] INFO  tests.BrowserConsoleLogsCapture - these are logs
+16:12:02.988 [main] INFO  tests.BrowserConsoleLogsCapture - opening the url
+16:12:35.176 [main] INFO  tests.BrowserConsoleLogsCapture - finding alert element
+16:12:35.303 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the alert button
+16:12:35.319 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the alert
+16:12:35.319 [main] INFO  tests.BrowserConsoleLogsCapture - finding the confirm alert button
+16:12:35.425 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the confirm button
+16:12:35.442 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the confirm alert
+16:12:35.442 [main] INFO  tests.BrowserConsoleLogsCapture - now finding the browser logs
+16:12:35.456 [main] INFO  tests.BrowserConsoleLogsCapture - total browser logs: 10
+16:12:35.456 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791110526473r0.6760587956412587&wxhr=true&t=1791110526490&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED

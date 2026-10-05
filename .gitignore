@@ -6,20 +6,6 @@ target/
 .project
 .settings/
 
-# Logs
-logs/
-*.log
-
-# Screenshots
-screenshots/
-
-# Downloads generated during tests
-downloads/
-
-# Test results
-test-output/
-surefire-reports/
-
 # OS
 .DS_Store
 Thumbs.db

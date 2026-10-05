@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Visual Validation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Visual Validation(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.AlertsAndIframes">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testIframes"/>
+          <include name="setup"/>
+          <include name="testingAlerst"/>
+        </methods>
+      </class> <!-- tests.AlertsAndIframes -->
+    </classes>
+  </test> <!-- Visual Validation(failed) -->
+</suite> <!-- Failed suite [Visual Validation Suite] -->
