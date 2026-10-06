@@ -16,71 +16,93 @@ public class DownloadFilesTest extends BaseTest{
 
 	@Test()
 	public void testDownload() throws InterruptedException, IOException {
-		
-		openurl("https://the-internet.herokuapp.com/download");
-		
-		File downloadFolder=new File(downloadPath);
-		
-		if(!downloadFolder.exists()) {
-			downloadFolder.mkdir();
-		}
-		
-		WebElement file= driver.findElement(By.xpath("//a[contains(@href,'.txt')]"));
-		
-		file.click();
-		
-		System.out.println("Download started");
 
-        Thread.sleep(3000);
-		
-		String fileName=file.getText();
-		
-		System.out.println("this is file name: "+fileName);
-		
-		
-		File downloadedFile=new File(downloadPath+File.separator+fileName);
-		
-		Assert.assertTrue(downloadedFile.exists(),"flie not downloaded");
-		
-		
-		//asserting the content in the file
-		BufferedReader reader =
-		        new BufferedReader(
-		                new FileReader(downloadedFile)
-		        );
+	    logger.info("download started");
 
-		StringBuilder content = new StringBuilder();
+	    logger.info("opening the URL");
 
-		String line;
+	    openurl("https://the-internet.herokuapp.com/download");
 
-		while ((line = reader.readLine()) != null) {
-		    content.append(line).append("\n");
-		}
+	    takeScreenshot("download01");
 
-		reader.close();
+	    File downloadFolder = new File(downloadPath);
 
-		String fileContent = content.toString();
+	    if (!downloadFolder.exists()) {
+	        downloadFolder.mkdir();
+	        logger.info("download folder created: " + downloadPath);
+	    }
 
-		System.out.println("File content:");
-		System.out.println(fileContent);
+	    WebElement file =
+	            driver.findElement(By.xpath("//a[contains(@href,'.txt')]"));
 
-		
-		Assert.assertFalse(
-		        fileContent.trim().isEmpty(),
-		        "Downloaded file is empty"
-		);
+	    String fileName = file.getText();
 
-		
-		//the text in the file is asc
-		
-		Assert.assertTrue(
-		        fileContent.contains("asc"),
-		        "Expected text was not found in downloaded file"
-		);
+	    logger.info("file selected for download: " + fileName);
 
-		System.out.println("File content validation passed");
+	    file.click();
 
-	
+	    logger.info("download started...");
+
+	    Thread.sleep(3000);
+
+	    System.out.println("This is file name: " + fileName);
+
+	    File downloadedFile =
+	            new File(downloadPath + File.separator + fileName);
+
+	    logger.info("checking whether file exists...");
+
+	    Assert.assertTrue(
+	            downloadedFile.exists(),
+	            "file not downloaded"
+	    );
+
+	    logger.info("file downloaded successfully: "
+	            + downloadedFile.getAbsolutePath());
+
+	    takeScreenshot("filedownload02");
+
+	    logger.info("reading downloaded file content...");
+
+	    BufferedReader reader =
+	            new BufferedReader(
+	                    new FileReader(downloadedFile)
+	            );
+
+	    StringBuilder content = new StringBuilder();
+
+	    String line;
+
+	    while ((line = reader.readLine()) != null) {
+	        content.append(line).append("\n");
+	    }
+
+	    reader.close();
+
+	    String fileContent = content.toString();
+
+	    System.out.println("File content:");
+	    System.out.println(fileContent);
+
+	    logger.info("validating file content...");
+
+	    Assert.assertFalse(
+	            fileContent.trim().isEmpty(),
+	            "downloaded file is empty"
+	    );
+
+	    Assert.assertTrue(
+	            fileContent.contains("asc"),
+	            "expected text was not found in downloaded file"
+	    );
+
+	    takeScreenshot("validatedcontent03");
+
+	    System.out.println("file content validation passed");
+
+	    logger.info("file content validation passed");
+
+	    logger.info("download test passed");
 	}
 
 }

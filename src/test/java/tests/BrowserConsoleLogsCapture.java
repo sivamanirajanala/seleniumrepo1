@@ -12,114 +12,108 @@ import java.util.logging.Level;
 import base.BaseTest;
 
 public class BrowserConsoleLogsCapture extends BaseTest {
-	
-	 @Test
-	    public void captureBrowseLogs() {
 
-	        logger.info("opening the url");
+	@Test
+	public void captureBrowseLogs() {
 
-	        openurl("https://the-internet.herokuapp.com/javascript_alerts");
+		logger.info("opening the url");
 
-	        logger.info("finding alert element");
+		openurl("https://the-internet.herokuapp.com/javascript_alerts");
 
-	        WebElement jsAlertElement = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
+		logger.info("finding alert element");
 
-	        jsAlertElement.click();
+		WebElement jsAlertElement = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
 
-	        logger.info("clicked on the alert button");
+		jsAlertElement.click();
 
-	        driver.switchTo().alert().accept();
+		logger.info("clicked on the alert button");
 
-	        logger.info("accepted the alert");
+		driver.switchTo().alert().accept();
 
-	        logger.info("finding the confirm alert button");
+		logger.info("accepted the alert");
 
-	        WebElement jsConfirmElement = driver.findElement( By.xpath("//button[text()='Click for JS Confirm']") );
+		logger.info("finding the confirm alert button");
 
-	        jsConfirmElement.click();
+		WebElement jsConfirmElement = driver.findElement(By.xpath("//button[text()='Click for JS Confirm']"));
 
-	        logger.info("clicked on the confirm button");
+		jsConfirmElement.click();
 
-	        driver.switchTo().alert().accept();
+		logger.info("clicked on the confirm button");
 
-	        logger.info("accepted the confirm alert");
+		driver.switchTo().alert().accept();
 
-	        logger.info("now finding the browser logs");
+		logger.info("accepted the confirm alert");
 
-	        // Get browser console logs
-	        LogEntries logsEntries =driver.manage().logs().get(LogType.BROWSER);
+		logger.info("now finding the browser logs");
 
-	        logger.info("total browser logs: " + logsEntries.getAll().size());
+		// Get browser console logs
+		LogEntries logsEntries = driver.manage().logs().get(LogType.BROWSER);
 
-	        boolean criticalLogs = false;
+		logger.info("total browser logs: " + logsEntries.getAll().size());
 
-	        int criticalErrorCount = 0;
-	        int warningCount = 0;
-	        int ignoredLogCount = 0;
+		boolean criticalLogs = false;
 
-	        // Process every browser console log
-	        for (LogEntry entry : logsEntries) {
+		int criticalErrorCount = 0;
+		int warningCount = 0;
+		int ignoredLogCount = 0;
 
-	            String level = entry.getLevel().toString();
-	            String message = entry.getMessage();
+		// Process every browser console log
+		for (LogEntry entry : logsEntries) {
 
-	            logger.info(level + " : " + message);
+			String level = entry.getLevel().toString();
+			String message = entry.getMessage();
 
-	            /*
-	             * Ignore known third-party Optimizely
-	             * analytics/tracking failures.
-	             */
-	            if (message.contains("optimizely.com")) {
+			logger.info(level + " : " + message);
 
-	                ignoredLogCount++;
+			
+			//Ignore known third-party Optimizely analytics/tracking failures.
+			if (message.contains("optimizely.com")) {
 
-	                logger.info("IGNORED - Third-party Optimizely log: " + message );
+				ignoredLogCount++;
 
-	                continue;
-	            }
+				logger.info("IGNORED - Third-party Optimizely log: " + message);
 
-	            /*
-	             * Ignore favicon 404.
-	             * This is not an application JavaScript error.
-	             */
-	            if (message.contains("favicon.ico")&& message.contains("404")) {
+				continue;
+			}
 
-	                ignoredLogCount++;
+			//ignore favicon 404. This is not an application JavaScript error.
+			if (message.contains("favicon.ico") && message.contains("404")) {
 
-	                logger.info( "IGNORED - Favicon 404: " + message);
+				ignoredLogCount++;
 
-	                continue;
-	            }
+				logger.info("IGNORED - Favicon 404: " + message);
 
-	            /*
-	             * Actual browser SEVERE error.
-	             */
-	            if (entry.getLevel().equals(Level.SEVERE)) {
+				continue;
+			}
 
-	                criticalLogs = true;
-	                criticalErrorCount++;
+			// Actual browser SEVERE error.
+			if (entry.getLevel().equals(Level.SEVERE)) {
 
-	                logger.error("CRITICAL BROWSER ERROR: " + message);
-	            }
+				criticalLogs = true;
+				criticalErrorCount++;
 
-	            /*
-	             * Browser WARNING.
-	             */
-	            else if (entry.getLevel().equals(Level.WARNING)) {
+				logger.error("CRITICAL BROWSER ERROR: " + message);
+				System.out.println(message);
+			}
 
-	                warningCount++;
+			
+			//Browser WARNING.
+			else if (entry.getLevel().equals(Level.WARNING)) {
 
-	                logger.warn("BROWSER WARNING: "+ message);
-	            }
-	        }
+				warningCount++;
 
-	      
-	        logger.info("Browser console log validation result");
-	        logger.info("Critical errors: " + criticalErrorCount);
-	        logger.info("Warnings: " + warningCount);
-	        logger.info("Ignored logs: " + ignoredLogCount);
-	      
-	        logger.info("Browser console validation completed successfully");
-	    }
+				logger.warn("BROWSER WARNING: " + message);
+			}
+		}
+
+		logger.info("Browser console log validation result");
+		logger.info("Critical errors: " + criticalErrorCount);
+		logger.info("Warnings: " + warningCount);
+		logger.info("Ignored logs: " + ignoredLogCount);
+
+		logger.info("Browser console validation completed successfully");
+		
+		System.out.println("critical logs are found"+criticalLogs);
+	}
 
 }

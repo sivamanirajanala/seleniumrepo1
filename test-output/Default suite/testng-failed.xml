@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.BrowserConsoleLogsCapture">
+      <class name="tests.VisualValidationTest">
         <methods>
           <include name="setup"/>
-          <include name="captureBrowseLogs"/>
+          <include name="validateLogoVisual"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.BrowserConsoleLogsCapture -->
+      </class> <!-- tests.VisualValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

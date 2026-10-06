@@ -1,0 +1,38 @@
+11:41:50.142 [main] INFO  tests.DownloadFilesTest - file downloaded successfully: D:\seleniumAssignments\seleniumWorks\downloads\tmp8np0d210.txt
+11:41:50.252 [main] INFO  tests.DownloadFilesTest - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\filedownload02.png
+11:41:50.253 [main] INFO  tests.DownloadFilesTest - reading downloaded file content...
+11:41:50.254 [main] INFO  tests.DownloadFilesTest - validating file content...
+12:49:09.737 [main] INFO  tests.AlertsAndIframes - opening the url for iframes
+12:49:11.861 [main] INFO  tests.AlertsAndIframes - switced to the child frame
+12:49:11.873 [main] INFO  tests.AlertsAndIframes - printed the title of the pageiFrame Test: Check & Bypass X-Frame-Options
+12:49:11.905 [main] INFO  tests.AlertsAndIframes - switced back to the main page
+12:49:11.937 [main] INFO  tests.AlertsAndIframes - printed the main page titleiFrame Test: Check & Bypass X-Frame-Options
+12:49:13.270 [main] INFO  tests.AlertsAndIframes - opening the url for alerts
+12:49:32.126 [main] INFO  tests.AlertsAndIframes - found the alert elemement and clicked on the button
+12:49:34.727 [main] INFO  tests.AlertsAndIframes - asserted the alert text
+12:49:34.739 [main] INFO  tests.AlertsAndIframes - acceped the alert
+12:49:34.753 [main] INFO  tests.AlertsAndIframes - found the confirm alert elemement and clicked on the button
+12:49:34.853 [main] INFO  tests.AlertsAndIframes - dismissed the confirm alert
+12:49:34.892 [main] INFO  tests.AlertsAndIframes - asserted the alert text
+12:49:34.912 [main] INFO  tests.AlertsAndIframes - found the alert elemement and clicked on the button
+12:49:34.998 [main] INFO  tests.AlertsAndIframes - sending the text for promt
+12:49:35.038 [main] INFO  tests.AlertsAndIframes - asserted the promt text
+12:50:08.896 [main] INFO  tests.BrowserConsoleLogsCapture - opening the url
+12:50:24.083 [main] INFO  tests.BrowserConsoleLogsCapture - finding alert element
+12:50:54.945 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the alert button
+12:50:54.957 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the alert
+12:50:54.958 [main] INFO  tests.BrowserConsoleLogsCapture - finding the confirm alert button
+12:50:55.046 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the confirm button
+12:50:55.055 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the confirm alert
+12:50:55.055 [main] INFO  tests.BrowserConsoleLogsCapture - now finding the browser logs
+12:50:55.064 [main] INFO  tests.BrowserConsoleLogsCapture - total browser logs: 7
+12:50:55.064 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791271225453r0.7332767223836827&wxhr=true&t=1791271225458&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+12:50:55.064 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Third-party Optimizely log: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791271225453r0.7332767223836827&wxhr=true&t=1791271225458&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+12:50:55.064 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://the-internet.herokuapp.com/css/font-awesome.css - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.064 [main] ERROR tests.BrowserConsoleLogsCapture - CRITICAL BROWSER ERROR: https://the-internet.herokuapp.com/css/font-awesome.css - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.065 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://the-internet.herokuapp.com/img/forkme_right_green_007200.png - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.065 [main] ERROR tests.BrowserConsoleLogsCapture - CRITICAL BROWSER ERROR: https://the-internet.herokuapp.com/img/forkme_right_green_007200.png - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.065 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://the-internet.herokuapp.com/js/foundation/foundation.js - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.065 [main] ERROR tests.BrowserConsoleLogsCapture - CRITICAL BROWSER ERROR: https://the-internet.herokuapp.com/js/foundation/foundation.js - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.065 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://the-internet.herokuapp.com/js/foundation/foundation.alerts.js - Failed to load resource: the server responded with a status of 503 ()
+12:50:55.065 [main] ERROR tests.BrowserConsoleLogsCapture - CRITICAL BROWSER ERROR: https://the-internet.herokuapp.com/js/foundation/foundation.alerts.js - Failed to load resource: the server responded with a status of 503 ()

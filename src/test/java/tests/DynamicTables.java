@@ -15,6 +15,7 @@ public class DynamicTables extends BaseTest{
 	public void testingTables() {
 		
 		
+		logger.info("opening the url");
 		openurl("https://the-internet.herokuapp.com/tables");
 		
 		
@@ -23,6 +24,8 @@ public class DynamicTables extends BaseTest{
 		List<WebElement> rows=el.findElements(By.xpath(".//tbody/tr"));
 		String expectedName="Bach";
 		
+		
+		logger.info("printing specified row table data");
 		for(WebElement row:rows) {
 			
 			List<WebElement> cells=row.findElements(By.tagName("td"));
@@ -38,6 +41,8 @@ public class DynamicTables extends BaseTest{
 			
 		}
 		
+		
+		logger.info("printing all data of table");
 		System.out.println("print all data of table");
 		
 		for(WebElement row:rows) {
@@ -50,6 +55,7 @@ public class DynamicTables extends BaseTest{
 		}
 		
 		
+		logger.info("printing sorted column table");
 		System.out.println("sorting the tables column");
 		
 		WebElement lastnameRow=driver.findElement(By.xpath("//table[@id='table1']//th[1]"));
@@ -66,13 +72,17 @@ public class DynamicTables extends BaseTest{
 		
 		List<String> expectedNames=new ArrayList<>(actualNames);
 		
+		logger.info("printing sorted order of the column");
 		Collections.sort(expectedNames);
+		
+		logger.info("printing actual order of the column data");
 		System.out.println("Actual order after sorting:");
         System.out.println(actualNames);
 
         System.out.println("Expected order:");
         System.out.println(expectedNames);
         
+        logger.info("asserting the actualnames to expected names");
         Assert.assertEquals(actualNames, expectedNames,"Last Name column is not sorted correctly");
 
         System.out.println("Sorting validation passed.");

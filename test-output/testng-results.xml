@@ -1,61 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-05T12:45:50 IST" name="Selenium Grid Suite" finished-at="2026-10-05T12:46:35 IST" duration-ms="45302">
+  <suite started-at="2026-10-06T15:48:14 IST" name="Demo Web Shop Test Suite" finished-at="2026-10-06T15:48:54 IST" duration-ms="40611">
     <groups>
     </groups>
-    <test started-at="2026-10-05T12:45:50 IST" name="Chrome Grid Test" finished-at="2026-10-05T12:46:35 IST" duration-ms="45302">
-      <class name="tests.AlertsAndIframes">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:tests.AlertsAndIframes@34e9fd99]" started-at="2026-10-05T12:45:50 IST" name="setup" finished-at="2026-10-05T12:45:56 IST" duration-ms="6215" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-10-06T15:48:14 IST" name="Authentication Tests" finished-at="2026-10-06T15:48:54 IST" duration-ms="40611">
+      <class name="tests.LoginTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestForSuite@302552ec]" started-at="2026-10-06T15:48:26 IST" name="setup" finished-at="2026-10-06T15:48:27 IST" duration-ms="1174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testIframes()[pri:0, instance:tests.AlertsAndIframes@34e9fd99]" started-at="2026-10-05T12:45:56 IST" name="testIframes" finished-at="2026-10-05T12:46:00 IST" duration-ms="4060" status="PASS">
+        <test-method signature="verifyValidLogin()[pri:0, instance:tests.LoginTestForSuite@302552ec]" started-at="2026-10-06T15:48:27 IST" name="verifyValidLogin" finished-at="2026-10-06T15:48:33 IST" duration-ms="5694" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testIframes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AlertsAndIframes@34e9fd99]" started-at="2026-10-05T12:46:00 IST" name="tearDown" finished-at="2026-10-05T12:46:01 IST" duration-ms="285" status="PASS">
+        </test-method> <!-- verifyValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestForSuite@302552ec]" started-at="2026-10-06T15:48:33 IST" name="tearDown" finished-at="2026-10-06T15:48:33 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:tests.AlertsAndIframes@34e9fd99]" started-at="2026-10-05T12:46:01 IST" name="setup" finished-at="2026-10-05T12:46:03 IST" duration-ms="2788" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+      </class> <!-- tests.LoginTestForSuite -->
+      <class name="tests.LogoutTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogoutTestForSuite@3d285d7e]" started-at="2026-10-06T15:48:33 IST" name="setup" finished-at="2026-10-06T15:48:34 IST" duration-ms="1339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testingAlerst()[pri:1, instance:tests.AlertsAndIframes@34e9fd99]" started-at="2026-10-05T12:46:03 IST" name="testingAlerst" finished-at="2026-10-05T12:46:35 IST" duration-ms="31639" status="PASS">
+        <test-method signature="verifyLogout()[pri:0, instance:tests.LogoutTestForSuite@3d285d7e]" started-at="2026-10-06T15:48:34 IST" name="verifyLogout" finished-at="2026-10-06T15:48:41 IST" duration-ms="7216" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testingAlerst -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AlertsAndIframes@34e9fd99]" started-at="2026-10-05T12:46:35 IST" name="tearDown" finished-at="2026-10-05T12:46:35 IST" duration-ms="209" status="PASS">
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTestForSuite@3d285d7e]" started-at="2026-10-06T15:48:41 IST" name="tearDown" finished-at="2026-10-06T15:48:42 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.AlertsAndIframes -->
-    </test> <!-- Chrome Grid Test -->
-  </suite> <!-- Selenium Grid Suite -->
+      </class> <!-- tests.LogoutTestForSuite -->
+      <class name="tests.RegistrationTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTestForSuite@34e9fd99]" started-at="2026-10-06T15:48:14 IST" name="setup" finished-at="2026-10-06T15:48:17 IST" duration-ms="2941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserRegistration()[pri:0, instance:tests.RegistrationTestForSuite@34e9fd99]" started-at="2026-10-06T15:48:17 IST" name="verifyUserRegistration" finished-at="2026-10-06T15:48:25 IST" duration-ms="8190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTestForSuite@34e9fd99]" started-at="2026-10-06T15:48:25 IST" name="tearDown" finished-at="2026-10-06T15:48:26 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegistrationTestForSuite -->
+      <class name="tests.NavigationTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NavigationTestForSuite@2cd76f31]" started-at="2026-10-06T15:48:48 IST" name="setup" finished-at="2026-10-06T15:48:49 IST" duration-ms="1317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNavigation()[pri:0, instance:tests.NavigationTestForSuite@2cd76f31]" started-at="2026-10-06T15:48:49 IST" name="verifyNavigation" finished-at="2026-10-06T15:48:54 IST" duration-ms="5241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NavigationTestForSuite@2cd76f31]" started-at="2026-10-06T15:48:54 IST" name="tearDown" finished-at="2026-10-06T15:48:54 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.NavigationTestForSuite -->
+      <class name="tests.SearchTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTestForSuite@40005471]" started-at="2026-10-06T15:48:42 IST" name="setup" finished-at="2026-10-06T15:48:43 IST" duration-ms="1205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyProductSearch()[pri:0, instance:tests.SearchTestForSuite@40005471]" started-at="2026-10-06T15:48:43 IST" name="verifyProductSearch" finished-at="2026-10-06T15:48:47 IST" duration-ms="4669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTestForSuite@40005471]" started-at="2026-10-06T15:48:47 IST" name="tearDown" finished-at="2026-10-06T15:48:48 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchTestForSuite -->
+    </test> <!-- Authentication Tests -->
+  </suite> <!-- Demo Web Shop Test Suite -->
 </testng-results>

@@ -1,0 +1,43 @@
+16:17:06.941 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the alert
+16:17:06.955 [main] INFO  tests.BrowserConsoleLogsCapture - finding the confirm alert button
+16:17:07.121 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the confirm button
+16:17:07.143 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the confirm alert
+16:17:07.144 [main] INFO  tests.BrowserConsoleLogsCapture - now finding the browser logs
+16:17:07.157 [main] INFO  tests.BrowserConsoleLogsCapture - total browser logs: 3
+16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110798169&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Third-party Optimizely log: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110798169&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
+16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Favicon 404: https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110826886&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Third-party Optimizely log: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110826886&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Browser console log validation result
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Critical errors: 0
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Warnings: 0
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Ignored logs: 3
+16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Browser console validation completed successfully
+18:17:47.925 [main] INFO  tests.MainTestCase - searching the product...
+18:17:49.294 [main] INFO  tests.MainTestCase - adding the product to the cart...
+18:17:49.963 [main] INFO  tests.MainTestCase - go to the cart section...
+18:17:51.498 [main] INFO  tests.MainTestCase - in the cartpage...
+18:17:51.549 [main] INFO  tests.MainTestCase - asserting the product details...
+18:17:51.658 [main] INFO  tests.MainTestCase - changing the quantity of the product to 2 dynamically...
+18:17:52.918 [main] INFO  tests.MainTestCase - price is doubled for the qauntity...
+18:17:53.001 [main] INFO  tests.MainTestCase - checkout to the cart...
+19:03:14.904 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+19:03:18.505 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+19:03:18.939 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+19:03:20.484 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message
+19:04:55.550 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+19:04:59.268 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+19:04:59.687 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+19:05:01.161 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message
+11:10:51.885 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+11:10:56.050 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+11:10:56.468 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+11:10:58.135 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message
+11:41:14.993 [main] INFO  tests.DownloadFilesTest - download started
+11:41:14.999 [main] INFO  tests.DownloadFilesTest - opening the URL
+11:41:46.628 [main] INFO  tests.DownloadFilesTest - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\download01.png
+11:41:46.679 [main] INFO  tests.DownloadFilesTest - file selected for download: tmp8np0d210.txt
+11:41:47.122 [main] INFO  tests.DownloadFilesTest - download started...
+11:41:50.135 [main] INFO  tests.DownloadFilesTest - checking whether file exists...

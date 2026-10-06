@@ -1,17 +1,40 @@
-16:17:06.941 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the alert
-16:17:06.955 [main] INFO  tests.BrowserConsoleLogsCapture - finding the confirm alert button
-16:17:07.121 [main] INFO  tests.BrowserConsoleLogsCapture - clicked on the confirm button
-16:17:07.143 [main] INFO  tests.BrowserConsoleLogsCapture - accepted the confirm alert
-16:17:07.144 [main] INFO  tests.BrowserConsoleLogsCapture - now finding the browser logs
-16:17:07.157 [main] INFO  tests.BrowserConsoleLogsCapture - total browser logs: 3
-16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110798169&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
-16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Third-party Optimizely log: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=https%3A%2F%2Fthe-internet.herokuapp.com%2Fjavascript_alerts&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110798169&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
-16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
-16:17:07.158 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Favicon 404: https://the-internet.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110826886&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Third-party Optimizely log: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791110798161r0.5046897050677399&wxhr=true&t=1791110826886&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Browser console log validation result
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Critical errors: 0
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Warnings: 0
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Ignored logs: 3
-16:17:07.159 [main] INFO  tests.BrowserConsoleLogsCapture - Browser console validation completed successfully
+13:18:17.246 [main] INFO  tests.BrowserConsoleLogsCapture - SEVERE : https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791272867630r0.5418890909378327&wxhr=true&t=1791272897117&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+13:18:17.253 [main] INFO  tests.BrowserConsoleLogsCapture - IGNORED - Third-party Optimizely log: https://298279967.log.optimizely.com/event?a=298279967&d=298279967&y=false&n=engagement&g=298283957&u=oeu1791272867630r0.5418890909378327&wxhr=true&t=1791272897117&f=298349752,318188263 - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+13:18:17.253 [main] INFO  tests.BrowserConsoleLogsCapture - Browser console log validation result
+13:18:17.254 [main] INFO  tests.BrowserConsoleLogsCapture - Critical errors: 4
+13:18:17.254 [main] INFO  tests.BrowserConsoleLogsCapture - Warnings: 0
+13:18:17.254 [main] INFO  tests.BrowserConsoleLogsCapture - Ignored logs: 2
+13:18:17.255 [main] INFO  tests.BrowserConsoleLogsCapture - Browser console validation completed successfully
+15:30:31.635 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+15:30:34.474 [main] INFO  tests.RegistrationTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyUserRegistration.png
+15:30:34.475 [main] INFO  tests.RegistrationTestForSuite - Failure screenshot captured for: verifyUserRegistration
+15:30:36.877 [main] INFO  tests.LoginTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyValidLogin.png
+15:30:36.877 [main] INFO  tests.LoginTestForSuite - Failure screenshot captured for: verifyValidLogin
+15:30:39.224 [main] INFO  tests.LogoutTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyLogout.png
+15:30:39.224 [main] INFO  tests.LogoutTestForSuite - Failure screenshot captured for: verifyLogout
+15:31:35.999 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+15:31:41.409 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+15:31:41.969 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+15:31:43.674 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message
+15:31:48.792 [main] INFO  tests.LoginTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyValidLogin.png
+15:31:48.793 [main] INFO  tests.LoginTestForSuite - Failure screenshot captured for: verifyValidLogin
+15:31:51.076 [main] INFO  tests.LogoutTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyLogout.png
+15:31:51.076 [main] INFO  tests.LogoutTestForSuite - Failure screenshot captured for: verifyLogout
+15:31:54.972 [main] INFO  tests.SearchTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyProductSearch.png
+15:31:54.973 [main] INFO  tests.SearchTestForSuite - Failure screenshot captured for: verifyProductSearch
+15:31:57.650 [main] INFO  tests.NavigationTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyNavigation.png
+15:31:57.650 [main] INFO  tests.NavigationTestForSuite - Failure screenshot captured for: verifyNavigation
+15:42:08.780 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+15:42:12.961 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+15:42:13.464 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+15:42:15.021 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message
+15:44:04.494 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+15:44:09.424 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+15:44:10.000 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+15:44:11.821 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message
+15:44:37.908 [main] INFO  tests.NavigationTestForSuite - Screenshot saved: D:\seleniumAssignments\seleniumWorks\screenshots\FAILED_verifyNavigation.png
+15:44:37.908 [main] INFO  tests.NavigationTestForSuite - Failure screenshot captured for: verifyNavigation
+15:48:17.687 [main] INFO  tests.RegistrationTestForSuite - opening the reegistration url
+15:48:23.565 [main] INFO  tests.RegistrationTestForSuite - enteringn the registration form details
+15:48:24.091 [main] INFO  tests.RegistrationTestForSuite - password and confirming the password
+15:48:25.806 [main] INFO  tests.RegistrationTestForSuite - asserting the registration success message

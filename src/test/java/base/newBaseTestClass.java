@@ -1,78 +1,137 @@
 package base;
 
-
-	import java.io.FileInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
-	import java.time.Duration;
-	import java.util.Properties;
+import java.time.Duration;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Properties;
 
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.chrome.ChromeDriver;
-	import org.openqa.selenium.firefox.FirefoxDriver;
-	import org.testng.annotations.AfterMethod;
-	import org.testng.annotations.BeforeMethod;
-	import org.testng.annotations.Parameters;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
+public class newBaseTestClass {
 
-	public class newBaseTestClass {
-		
-	    protected WebDriver driver;
-	    protected Properties properties;
+    protected WebDriver driver;
+    protected Properties properties;
 
-	    @BeforeMethod
-	    @Parameters("browser")
-	    public void setup(String browser) throws IOException {
+    // Stores PASS/FAIL results
+    protected Map<String, String> testResults;
 
-
-	        properties = new Properties();
-
-	        FileInputStream file =
-	                new FileInputStream(
-	                        "src/test/resources/config.properties"
-	                );
-
-	        properties.load(file);
-	        file.close();
-
-	        System.out.println("Browser: " + browser);
+    // Stores current browser
+    protected String currentBrowser;
 
 
-	        if (browser.equalsIgnoreCase("chrome")) {
+    @BeforeMethod
+    @Parameters("browser")
+    public void setup(String browser) throws IOException {
 
-	            driver = new ChromeDriver();
+        testResults = new LinkedHashMap<>();
 
-	        } else if (browser.equalsIgnoreCase("firefox")) {
+        currentBrowser = browser;
 
-	            driver = new FirefoxDriver();
+        properties = new Properties();
 
-	        } else {
+        FileInputStream file = new FileInputStream("src/test/resources/config.properties");
 
-	            throw new RuntimeException(
-	                    "Invalid browser: " + browser
-	            );
-	        }
+        properties.load(file);
+        file.close();
 
-	        
-	        driver.manage().window().maximize();
-
-	        driver.manage().timeouts().implicitlyWait(
-	                Duration.ofSeconds(10)
-	        );
+        System.out.println("Browser: " + browser);
 
 
-	        driver.get(
-	                properties.getProperty("url")
-	        );
-	    }
+        if (browser.equalsIgnoreCase("chrome")) {
 
-	    @AfterMethod
-	    public void tearDown() {
+            driver = new ChromeDriver();
 
-	        if (driver != null) {
-	            driver.quit();
-	        }
-	    }
-	
-		
-		
+        } else if (browser.equalsIgnoreCase("firefox")) {
+
+            driver = new FirefoxDriver();
+
+        } else {
+
+            throw new RuntimeException(
+                    "Invalid browser: " + browser
+            );
+        }
+
+
+        driver.manage().window().maximize();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
+        driver.get(properties.getProperty("url"));
+
+        
+        testResults.put("Open application", "PASS");
+    }
+
+
+    // Method to record individual results
+    protected void recordResult(String testName, boolean passed) {
+
+        if (passed) {
+            testResults.put(testName, "PASS");
+        } else {
+            testResults.put(testName, "FAIL");
+        }
+    }
+
+
+    
+    protected void printResults() {
+
+        boolean overallPass = true;
+
+        for (String result : testResults.values()) {
+
+            if (result.equals("FAIL")) {
+                overallPass = false;
+                break;
+            }
+        }
+
+        testResults.put(
+                "Overall",
+                overallPass ? "PASS" : "FAIL"
+        );
+
+
+        System.out.println();
+        System.out.println("========================================");
+        System.out.println(
+                "browser test result: "
+                + currentBrowser.toUpperCase()
+        );
+        System.out.println("========================================");
+
+
+        for (Map.Entry<String, String> entry :
+                testResults.entrySet()) {
+
+            System.out.printf(
+                    "%-17s : %s%n",
+                    entry.getKey(),
+                    entry.getValue()
+            );
+        }
+
+
+        System.out.println("========================================");
+        System.out.println();
+    }
+
+
+    @AfterMethod
+    public void tearDown() {
+
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
