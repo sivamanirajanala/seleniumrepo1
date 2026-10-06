@@ -1,0 +1,809 @@
+<html>
+<head>
+<title>TestNG:  All Selenium Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All Selenium Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 06 17:33:06 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (428 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DownloadTest.cleanup()'><b>cleanup</b><br>Test class: tests.DownloadTest</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57497692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace57497692'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.DownloadTest@247bddad</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginTestForSuite.tearDown()'><b>tearDown</b><br>Test class: tests.LoginTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTestForSuite@5e5d171f</td></tr>
+<tr>
+<td title='tests.RegistrationTestForSuite.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.RegistrationTestForSuite@6c40365c</td></tr>
+<tr>
+<td title='tests.DownloadFilesTest.tearDown()'><b>tearDown</b><br>Test class: tests.DownloadFilesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DownloadFilesTest@2362f559</td></tr>
+<tr>
+<td title='tests.VisualValidationTest.setup()'><b>setup</b><br>Test class: tests.VisualValidationTest</td>
+<td></td>
+<td>0</td>
+<td>tests.VisualValidationTest@131ef10</td></tr>
+<tr>
+<td title='tests.CrossBrowserTests.tearDown()'><b>tearDown</b><br>Test class: tests.CrossBrowserTests</td>
+<td></td>
+<td>0</td>
+<td>tests.CrossBrowserTests@8297b3a</td></tr>
+<tr>
+<td title='tests.AlertsAndIframes.tearDown()'><b>tearDown</b><br>Test class: tests.AlertsAndIframes</td>
+<td></td>
+<td>0</td>
+<td>tests.AlertsAndIframes@3fc2959f</td></tr>
+<tr>
+<td title='tests.DragAndDropTestCasae.setup()'><b>setup</b><br>Test class: tests.DragAndDropTestCasae</td>
+<td></td>
+<td>0</td>
+<td>tests.DragAndDropTestCasae@d35dea7</td></tr>
+<tr>
+<td title='tests.PaginationTest.setup()'><b>setup</b><br>Test class: tests.PaginationTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PaginationTest@41a2befb</td></tr>
+<tr>
+<td title='tests.NavigationTestForSuite.tearDown()'><b>tearDown</b><br>Test class: tests.NavigationTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.NavigationTestForSuite@77f1baf5</td></tr>
+<tr>
+<td title='tests.AlertsAndIframes.setup()'><b>setup</b><br>Test class: tests.AlertsAndIframes</td>
+<td></td>
+<td>0</td>
+<td>tests.AlertsAndIframes@3fc2959f</td></tr>
+<tr>
+<td title='tests.NavigationTestForSuite.setup()'><b>setup</b><br>Test class: tests.NavigationTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.NavigationTestForSuite@77f1baf5</td></tr>
+<tr>
+<td title='tests.DownloadFilesTest.setup()'><b>setup</b><br>Test class: tests.DownloadFilesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DownloadFilesTest@2362f559</td></tr>
+<tr>
+<td title='tests.DynamicTables.tearDown()'><b>tearDown</b><br>Test class: tests.DynamicTables</td>
+<td></td>
+<td>0</td>
+<td>tests.DynamicTables@7770f470</td></tr>
+<tr>
+<td title='tests.LogoutTestForSuite.setup()'><b>setup</b><br>Test class: tests.LogoutTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.LogoutTestForSuite@24313fcc</td></tr>
+<tr>
+<td title='tests.AlertsAndIframes.setup()'><b>setup</b><br>Test class: tests.AlertsAndIframes</td>
+<td></td>
+<td>0</td>
+<td>tests.AlertsAndIframes@3fc2959f</td></tr>
+<tr>
+<td title='tests.AlertsAndIframes.tearDown()'><b>tearDown</b><br>Test class: tests.AlertsAndIframes</td>
+<td></td>
+<td>0</td>
+<td>tests.AlertsAndIframes@3fc2959f</td></tr>
+<tr>
+<td title='tests.PaginationTest.tearDown()'><b>tearDown</b><br>Test class: tests.PaginationTest</td>
+<td></td>
+<td>0</td>
+<td>tests.PaginationTest@41a2befb</td></tr>
+<tr>
+<td title='tests.SearchTestForSuite.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchTestForSuite@7bedc48a</td></tr>
+<tr>
+<td title='tests.MainTestCase.tearDown()'><b>tearDown</b><br>Test class: tests.MainTestCase</td>
+<td></td>
+<td>0</td>
+<td>tests.MainTestCase@7d20d0b</td></tr>
+<tr>
+<td title='tests.LogoutTestForSuite.tearDown()'><b>tearDown</b><br>Test class: tests.LogoutTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.LogoutTestForSuite@24313fcc</td></tr>
+<tr>
+<td title='tests.DynamicTables.setup()'><b>setup</b><br>Test class: tests.DynamicTables</td>
+<td></td>
+<td>0</td>
+<td>tests.DynamicTables@7770f470</td></tr>
+<tr>
+<td title='tests.VisualValidationTest.tearDown()'><b>tearDown</b><br>Test class: tests.VisualValidationTest</td>
+<td></td>
+<td>0</td>
+<td>tests.VisualValidationTest@131ef10</td></tr>
+<tr>
+<td title='tests.LoginTestForSuite.setup()'><b>setup</b><br>Test class: tests.LoginTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTestForSuite@5e5d171f</td></tr>
+<tr>
+<td title='tests.BrowserConsoleLogsCapture.setup()'><b>setup</b><br>Test class: tests.BrowserConsoleLogsCapture</td>
+<td></td>
+<td>0</td>
+<td>tests.BrowserConsoleLogsCapture@7817fd62</td></tr>
+<tr>
+<td title='tests.BrowserConsoleLogsCapture.tearDown()'><b>tearDown</b><br>Test class: tests.BrowserConsoleLogsCapture</td>
+<td></td>
+<td>0</td>
+<td>tests.BrowserConsoleLogsCapture@7817fd62</td></tr>
+<tr>
+<td title='tests.DragAndDropTestCasae.tearDown()'><b>tearDown</b><br>Test class: tests.DragAndDropTestCasae</td>
+<td></td>
+<td>0</td>
+<td>tests.DragAndDropTestCasae@d35dea7</td></tr>
+<tr>
+<td title='tests.RegistrationTestForSuite.setup()'><b>setup</b><br>Test class: tests.RegistrationTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.RegistrationTestForSuite@6c40365c</td></tr>
+<tr>
+<td title='tests.MainTestCase.setup()'><b>setup</b><br>Test class: tests.MainTestCase</td>
+<td></td>
+<td>0</td>
+<td>tests.MainTestCase@7d20d0b</td></tr>
+<tr>
+<td title='tests.SearchTestForSuite.setup()'><b>setup</b><br>Test class: tests.SearchTestForSuite</td>
+<td></td>
+<td>0</td>
+<td>tests.SearchTestForSuite@7bedc48a</td></tr>
+<tr>
+<td title='tests.CrossBrowserTests.setup()'><b>setup</b><br>Test class: tests.CrossBrowserTests</td>
+<td></td>
+<td>0</td>
+<td>tests.CrossBrowserTests@8297b3a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.BrowserConsoleLogsCapture.captureBrowseLogs()'><b>captureBrowseLogs</b><br>Test class: tests.BrowserConsoleLogsCapture</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2122049087", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2122049087'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.BrowserConsoleLogsCapture@7817fd62</td></tr>
+<tr>
+<td title='tests.DownloadTest.verifyDownload()'><b>verifyDownload</b><br>Test class: tests.DownloadTest</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257608605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257608605'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.DownloadTest@247bddad</td></tr>
+<tr>
+<td title='tests.DragAndDropTestCasae.testDragAndDrop()'><b>testDragAndDrop</b><br>Test class: tests.DragAndDropTestCasae</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace637241618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637241618'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.DragAndDropTestCasae@d35dea7</td></tr>
+<tr>
+<td title='tests.SearchTestForSuite.verifyProductSearch()'><b>verifyProductSearch</b><br>Test class: tests.SearchTestForSuite</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace936653983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace936653983'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTestForSuite@7bedc48a</td></tr>
+<tr>
+<td title='tests.MainTestCase.endtoEndTestCase()'><b>endtoEndTestCase</b><br>Test class: tests.MainTestCase</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace455785638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace455785638'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.MainTestCase@7d20d0b</td></tr>
+<tr>
+<td title='tests.LoginTestForSuite.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: tests.LoginTestForSuite</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947896119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947896119'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.LoginTestForSuite@5e5d171f</td></tr>
+<tr>
+<td title='tests.DownloadFilesTest.testDownload()'><b>testDownload</b><br>Test class: tests.DownloadFilesTest</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636050357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636050357'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.DownloadFilesTest@2362f559</td></tr>
+<tr>
+<td title='tests.CrossBrowserTests.testLogin()'><b>testLogin</b><br>Test class: tests.CrossBrowserTests</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1725165248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725165248'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CrossBrowserTests@8297b3a</td></tr>
+<tr>
+<td title='tests.DynamicTables.testingTables()'><b>testingTables</b><br>Test class: tests.DynamicTables</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace35534346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace35534346'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.DynamicTables@7770f470</td></tr>
+<tr>
+<td title='tests.NavigationTestForSuite.verifyNavigation()'><b>verifyNavigation</b><br>Test class: tests.NavigationTestForSuite</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138410383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1138410383'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.NavigationTestForSuite@77f1baf5</td></tr>
+<tr>
+<td title='tests.PaginationTest.verifyPagination()'><b>verifyPagination</b><br>Test class: tests.PaginationTest</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213818572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213818572'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.PaginationTest@41a2befb</td></tr>
+<tr>
+<td title='tests.LogoutTestForSuite.verifyLogout()'><b>verifyLogout</b><br>Test class: tests.LogoutTestForSuite</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1328238652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1328238652'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.LogoutTestForSuite@24313fcc</td></tr>
+<tr>
+<td title='tests.AlertsAndIframes.testingAlerst()'><b>testingAlerst</b><br>Test class: tests.AlertsAndIframes</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223850219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1223850219'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AlertsAndIframes@3fc2959f</td></tr>
+<tr>
+<td title='tests.VisualValidationTest.validateLogoVisual()'><b>validateLogoVisual</b><br>Test class: tests.VisualValidationTest</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055096410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055096410'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.VisualValidationTest@131ef10</td></tr>
+<tr>
+<td title='tests.RegistrationTestForSuite.verifyUserRegistration()'><b>verifyUserRegistration</b><br>Test class: tests.RegistrationTestForSuite</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515638188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515638188'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationTestForSuite@6c40365c</td></tr>
+<tr>
+<td title='tests.AlertsAndIframes.testIframes()'><b>testIframes</b><br>Test class: tests.AlertsAndIframes</td>
+<td><div><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800281454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace800281454'><pre>java.io.FileNotFoundException: Directory &apos;D:\seleniumAssignments\seleniumWorks\DownloadFiles&apos; does not exist.
+	at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+	at tests.DownloadTest.cleanup(DownloadTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AlertsAndIframes@3fc2959f</td></tr>
+</table><p>
+</body>
+</html>

@@ -46,7 +46,7 @@ public class BrowserConsoleLogsCapture extends BaseTest {
 
 		logger.info("now finding the browser logs");
 
-		// Get browser console logs
+		
 		LogEntries logsEntries = driver.manage().logs().get(LogType.BROWSER);
 
 		logger.info("total browser logs: " + logsEntries.getAll().size());
@@ -57,7 +57,7 @@ public class BrowserConsoleLogsCapture extends BaseTest {
 		int warningCount = 0;
 		int ignoredLogCount = 0;
 
-		// Process every browser console log
+	
 		for (LogEntry entry : logsEntries) {
 
 			String level = entry.getLevel().toString();
@@ -66,7 +66,7 @@ public class BrowserConsoleLogsCapture extends BaseTest {
 			logger.info(level + " : " + message);
 
 			
-			//Ignore known third-party Optimizely analytics/tracking failures.
+			
 			if (message.contains("optimizely.com")) {
 
 				ignoredLogCount++;
@@ -76,7 +76,7 @@ public class BrowserConsoleLogsCapture extends BaseTest {
 				continue;
 			}
 
-			//ignore favicon 404. This is not an application JavaScript error.
+			
 			if (message.contains("favicon.ico") && message.contains("404")) {
 
 				ignoredLogCount++;
@@ -86,7 +86,7 @@ public class BrowserConsoleLogsCapture extends BaseTest {
 				continue;
 			}
 
-			// Actual browser SEVERE error.
+		
 			if (entry.getLevel().equals(Level.SEVERE)) {
 
 				criticalLogs = true;

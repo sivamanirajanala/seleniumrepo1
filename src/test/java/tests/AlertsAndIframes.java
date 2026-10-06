@@ -69,8 +69,7 @@ public class AlertsAndIframes extends BaseTest{
 		Assert.assertEquals(promtresElement.getText(), "You entered: yes im prompt");
 		
 		System.out.println("prompt completed");
-		
-		
+			
 		
 	}
 
@@ -96,8 +95,6 @@ public class AlertsAndIframes extends BaseTest{
 		System.out.println(frameTitle);
 		
 	
-		
-	
 		driver.switchTo().defaultContent();
 		
 		logger.info("switced back to the main page");
@@ -107,9 +104,6 @@ public class AlertsAndIframes extends BaseTest{
 		 
 		 logger.info("printed the main page title"+mainMageTitleString);
 		 System.out.println("main page title"+mainMageTitleString);
-		
-		
-		
-		
+	
 	}
 }

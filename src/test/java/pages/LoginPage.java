@@ -7,58 +7,57 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    WebDriver driver;
+	WebDriver driver;
 
-    @FindBy(className = "ico-login")
-    WebElement loginLink; 
+	@FindBy(className = "ico-login")
+	WebElement loginLink;
 
-    @FindBy(id = "Email")
-    WebElement email;
+	@FindBy(id = "Email")
+	WebElement email;
 
-    @FindBy(id = "Password")
-    WebElement password;
+	@FindBy(id = "Password")
+	WebElement password;
 
-    @FindBy(css = "input[value='Log in']")
-    WebElement loginButton;
+	@FindBy(css = "input[value='Log in']")
+	WebElement loginButton;
 
-    @FindBy(className = "ico-logout")
-    WebElement logoutLink;
+	@FindBy(className = "ico-logout")
+	WebElement logoutLink;
 
-    public LoginPage(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 
-        this.driver = driver;
+		this.driver = driver;
 
-        PageFactory.initElements(driver, this);
-    }
+		PageFactory.initElements(driver, this);
+	}
 
-    public void clickLogin() {
+	public void clickLogin() {
 
-        loginLink.click();
-    }
+		loginLink.click();
+	}
 
-    public void enterEmail(String emailAddress) {
+	public void enterEmail(String emailAddress) {
 
-        email.sendKeys(emailAddress);
-    }
+		email.sendKeys(emailAddress);
+	}
 
-    public void enterPassword(String passwordValue) {
+	public void enterPassword(String passwordValue) {
 
-        password.sendKeys(passwordValue);
-    }
+		password.sendKeys(passwordValue);
+	}
 
-    public void clickLoginButton() {
+	public void clickLoginButton() {
 
-        loginButton.click();
-    }
+		loginButton.click();
+	}
 
-    public boolean isLogoutDisplayed() {
+	public boolean isLogoutDisplayed() {
 
-        return logoutLink.isDisplayed();
-    }
+		return logoutLink.isDisplayed();
+	}
 
-    public void logout() {
+	public void logout() {
 
-        logoutLink.click();
-    }
+		logoutLink.click();
+	}
 }
-

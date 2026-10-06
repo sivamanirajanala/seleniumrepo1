@@ -7,44 +7,43 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePageForSuite {
 
-    WebDriver driver;
+	WebDriver driver;
 
-    @FindBy(id = "small-searchterms")
-    WebElement searchBox;
- 
-    @FindBy(css = "input[value='Search']")
-    WebElement searchButton;
+	@FindBy(id = "small-searchterms")
+	WebElement searchBox;
 
-    @FindBy(linkText = "Books")
-    WebElement booksLink;
+	@FindBy(css = "input[value='Search']")
+	WebElement searchButton;
 
-    @FindBy(linkText = "Electronics")
-    WebElement electronicsLink;
+	@FindBy(linkText = "Books")
+	WebElement booksLink;
 
-    public HomePageForSuite(WebDriver driver) {
+	@FindBy(linkText = "Electronics")
+	WebElement electronicsLink;
 
-        this.driver = driver;
+	public HomePageForSuite(WebDriver driver) {
 
-        PageFactory.initElements(driver, this);
-    }
+		this.driver = driver;
 
-    public void searchProduct(String product) {
+		PageFactory.initElements(driver, this);
+	}
 
-        searchBox.clear();
+	public void searchProduct(String product) {
 
-        searchBox.sendKeys(product);
+		searchBox.clear();
 
-        searchButton.click();
-    }
+		searchBox.sendKeys(product);
 
-    public void clickBooks() {
+		searchButton.click();
+	}
 
-        booksLink.click();
-    }
+	public void clickBooks() {
 
-    public void clickElectronics() {
+		booksLink.click();
+	}
 
-        electronicsLink.click();
-    }
+	public void clickElectronics() {
+
+		electronicsLink.click();
+	}
 }
-

@@ -1,81 +1,739 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="0" failed="0" skipped="16">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-06T15:48:14 IST" name="Demo Web Shop Test Suite" finished-at="2026-10-06T15:48:54 IST" duration-ms="40611">
+  <suite started-at="2026-10-06T17:33:06 IST" name="Selenium Test Suite" finished-at="2026-10-06T17:33:06 IST" duration-ms="428">
     <groups>
     </groups>
-    <test started-at="2026-10-06T15:48:14 IST" name="Authentication Tests" finished-at="2026-10-06T15:48:54 IST" duration-ms="40611">
+    <test started-at="2026-10-06T17:33:06 IST" name="All Selenium Tests" finished-at="2026-10-06T17:33:06 IST" duration-ms="428">
       <class name="tests.LoginTestForSuite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestForSuite@302552ec]" started-at="2026-10-06T15:48:26 IST" name="setup" finished-at="2026-10-06T15:48:27 IST" duration-ms="1174" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTestForSuite@5e5d171f]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyValidLogin()[pri:0, instance:tests.LoginTestForSuite@302552ec]" started-at="2026-10-06T15:48:27 IST" name="verifyValidLogin" finished-at="2026-10-06T15:48:33 IST" duration-ms="5694" status="PASS">
+        <test-method signature="verifyValidLogin()[pri:0, instance:tests.LoginTestForSuite@5e5d171f]" started-at="2026-10-06T17:33:06 IST" name="verifyValidLogin" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestForSuite@302552ec]" started-at="2026-10-06T15:48:33 IST" name="tearDown" finished-at="2026-10-06T15:48:33 IST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTestForSuite@5e5d171f]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTestForSuite -->
-      <class name="tests.LogoutTestForSuite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogoutTestForSuite@3d285d7e]" started-at="2026-10-06T15:48:33 IST" name="setup" finished-at="2026-10-06T15:48:34 IST" duration-ms="1339" status="PASS">
+      <class name="tests.DynamicTables">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DynamicTables@7770f470]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogout()[pri:0, instance:tests.LogoutTestForSuite@3d285d7e]" started-at="2026-10-06T15:48:34 IST" name="verifyLogout" finished-at="2026-10-06T15:48:41 IST" duration-ms="7216" status="PASS">
+        <test-method signature="testingTables()[pri:0, instance:tests.DynamicTables@7770f470]" started-at="2026-10-06T17:33:06 IST" name="testingTables" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingTables -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DynamicTables@7770f470]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DynamicTables -->
+      <class name="tests.LogoutTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogoutTestForSuite@24313fcc]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogout()[pri:0, instance:tests.LogoutTestForSuite@24313fcc]" started-at="2026-10-06T17:33:06 IST" name="verifyLogout" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTestForSuite@3d285d7e]" started-at="2026-10-06T15:48:41 IST" name="tearDown" finished-at="2026-10-06T15:48:42 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTestForSuite@24313fcc]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LogoutTestForSuite -->
-      <class name="tests.RegistrationTestForSuite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTestForSuite@34e9fd99]" started-at="2026-10-06T15:48:14 IST" name="setup" finished-at="2026-10-06T15:48:17 IST" duration-ms="2941" status="PASS">
+      <class name="tests.DownloadTest">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.DownloadTest@247bddad]" started-at="2026-10-06T17:33:06 IST" name="cleanup" finished-at="2026-10-06T17:33:06 IST" duration-ms="36" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method signature="verifyDownload()[pri:0, instance:tests.DownloadTest@247bddad]" started-at="2026-10-06T17:33:06 IST" name="verifyDownload" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDownload -->
+      </class> <!-- tests.DownloadTest -->
+      <class name="tests.BrowserConsoleLogsCapture">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BrowserConsoleLogsCapture@7817fd62]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserRegistration()[pri:0, instance:tests.RegistrationTestForSuite@34e9fd99]" started-at="2026-10-06T15:48:17 IST" name="verifyUserRegistration" finished-at="2026-10-06T15:48:25 IST" duration-ms="8190" status="PASS">
+        <test-method signature="captureBrowseLogs()[pri:0, instance:tests.BrowserConsoleLogsCapture@7817fd62]" started-at="2026-10-06T17:33:06 IST" name="captureBrowseLogs" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureBrowseLogs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BrowserConsoleLogsCapture@7817fd62]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BrowserConsoleLogsCapture -->
+      <class name="tests.VisualValidationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.VisualValidationTest@131ef10]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateLogoVisual()[pri:0, instance:tests.VisualValidationTest@131ef10]" started-at="2026-10-06T17:33:06 IST" name="validateLogoVisual" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoVisual -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VisualValidationTest@131ef10]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VisualValidationTest -->
+      <class name="tests.PaginationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.PaginationTest@41a2befb]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPagination()[pri:0, instance:tests.PaginationTest@41a2befb]" started-at="2026-10-06T17:33:06 IST" name="verifyPagination" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPagination -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PaginationTest@41a2befb]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.PaginationTest -->
+      <class name="tests.SearchTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTestForSuite@7bedc48a]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyProductSearch()[pri:0, instance:tests.SearchTestForSuite@7bedc48a]" started-at="2026-10-06T17:33:06 IST" name="verifyProductSearch" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTestForSuite@7bedc48a]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchTestForSuite -->
+      <class name="tests.DownloadFilesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DownloadFilesTest@2362f559]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDownload()[pri:0, instance:tests.DownloadFilesTest@2362f559]" started-at="2026-10-06T17:33:06 IST" name="testDownload" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DownloadFilesTest@2362f559]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DownloadFilesTest -->
+      <class name="tests.DragAndDropTestCasae">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DragAndDropTestCasae@d35dea7]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDragAndDrop()[pri:0, instance:tests.DragAndDropTestCasae@d35dea7]" started-at="2026-10-06T17:33:06 IST" name="testDragAndDrop" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DragAndDropTestCasae@d35dea7]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DragAndDropTestCasae -->
+      <class name="tests.RegistrationTestForSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTestForSuite@6c40365c]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserRegistration()[pri:0, instance:tests.RegistrationTestForSuite@6c40365c]" started-at="2026-10-06T17:33:06 IST" name="verifyUserRegistration" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTestForSuite@34e9fd99]" started-at="2026-10-06T15:48:25 IST" name="tearDown" finished-at="2026-10-06T15:48:26 IST" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegistrationTestForSuite@6c40365c]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.RegistrationTestForSuite -->
       <class name="tests.NavigationTestForSuite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NavigationTestForSuite@2cd76f31]" started-at="2026-10-06T15:48:48 IST" name="setup" finished-at="2026-10-06T15:48:49 IST" duration-ms="1317" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NavigationTestForSuite@77f1baf5]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyNavigation()[pri:0, instance:tests.NavigationTestForSuite@2cd76f31]" started-at="2026-10-06T15:48:49 IST" name="verifyNavigation" finished-at="2026-10-06T15:48:54 IST" duration-ms="5241" status="PASS">
+        <test-method signature="verifyNavigation()[pri:0, instance:tests.NavigationTestForSuite@77f1baf5]" started-at="2026-10-06T17:33:06 IST" name="verifyNavigation" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NavigationTestForSuite@2cd76f31]" started-at="2026-10-06T15:48:54 IST" name="tearDown" finished-at="2026-10-06T15:48:54 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.NavigationTestForSuite@77f1baf5]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.NavigationTestForSuite -->
-      <class name="tests.SearchTestForSuite">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTestForSuite@40005471]" started-at="2026-10-06T15:48:42 IST" name="setup" finished-at="2026-10-06T15:48:43 IST" duration-ms="1205" status="PASS">
+      <class name="tests.MainTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MainTestCase@7d20d0b]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyProductSearch()[pri:0, instance:tests.SearchTestForSuite@40005471]" started-at="2026-10-06T15:48:43 IST" name="verifyProductSearch" finished-at="2026-10-06T15:48:47 IST" duration-ms="4669" status="PASS">
+        <test-method signature="endtoEndTestCase()[pri:0, instance:tests.MainTestCase@7d20d0b]" started-at="2026-10-06T17:33:06 IST" name="endtoEndTestCase" finished-at="2026-10-06T17:33:06 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTestForSuite@40005471]" started-at="2026-10-06T15:48:47 IST" name="tearDown" finished-at="2026-10-06T15:48:48 IST" duration-ms="212" status="PASS">
+        </test-method> <!-- endtoEndTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.MainTestCase@7d20d0b]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.SearchTestForSuite -->
-    </test> <!-- Authentication Tests -->
-  </suite> <!-- Demo Web Shop Test Suite -->
+      </class> <!-- tests.MainTestCase -->
+      <class name="tests.CrossBrowserTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CrossBrowserTests@8297b3a]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:0, instance:tests.CrossBrowserTests@8297b3a]" started-at="2026-10-06T17:33:06 IST" name="testLogin" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CrossBrowserTests@8297b3a]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CrossBrowserTests -->
+      <class name="tests.AlertsAndIframes">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AlertsAndIframes@3fc2959f]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testIframes()[pri:0, instance:tests.AlertsAndIframes@3fc2959f]" started-at="2026-10-06T17:33:06 IST" name="testIframes" finished-at="2026-10-06T17:33:06 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIframes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AlertsAndIframes@3fc2959f]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AlertsAndIframes@3fc2959f]" started-at="2026-10-06T17:33:06 IST" name="setup" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testingAlerst()[pri:1, instance:tests.AlertsAndIframes@3fc2959f]" started-at="2026-10-06T17:33:06 IST" name="testingAlerst" finished-at="2026-10-06T17:33:06 IST" duration-ms="1" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: Directory 'D:\seleniumAssignments\seleniumWorks\DownloadFiles' does not exist.
+at org.apache.commons.io.FileUtils.requireDirectoryExists(FileUtils.java:2892)
+at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2332)
+at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:402)
+at tests.DownloadTest.cleanup(DownloadTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingAlerst -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AlertsAndIframes@3fc2959f]" started-at="2026-10-06T17:33:06 IST" name="tearDown" finished-at="2026-10-06T17:33:06 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AlertsAndIframes -->
+    </test> <!-- All Selenium Tests -->
+  </suite> <!-- Selenium Test Suite -->
 </testng-results>
